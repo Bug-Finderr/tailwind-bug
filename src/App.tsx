@@ -51,20 +51,28 @@ export default function App() {
 
             {/* THE BUTTONS ARE WITHIN THIS DIV */}
             <div className="grid w-full gap-4">
-              <Button className="rounded-full border-none bg-[#333333] px-8 text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]">
+              <Button className="rounded-full bg-[#333333] text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]">
                 Working: Using hex code bg-[#333333]
               </Button>
 
-              <Button className="rounded-full border-none bg-zinc-800 px-8 text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]">
+              <Button className="rounded-full bg-zinc-800 text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]">
                 Working: Using hex code bg-zinc-800
               </Button>
 
-              <Button className="rounded-full border-none bg-zinc-800/95 px-8 text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]">
+              <Button className="rounded-full bg-zinc-800/95 text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]">
                 Bug: Using opacity bg-zinc-800/95
               </Button>
 
-              <Button className="rounded-full border-2 border-zinc-800/95 bg-zinc-800/95 px-8 text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]">
+              <Button className="rounded-full border-2 border-zinc-800/95 bg-zinc-800/95 text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]">
                 Bug: Same button with border-2 and bg-zinc-800/95
+              </Button>
+
+              {/* Check index.css */}
+              <Button
+                id="test"
+                className="rounded-full text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]"
+              >
+                Turns out its not working even in plain CSS
               </Button>
             </div>
           </div>
@@ -97,6 +105,10 @@ export default function App() {
                 different theme toggles (page and box) to demonstrate how the
                 artifacts change based on the immediate parent's background
                 color.
+              </li>
+              <li>
+                Turns out, its not working even in plain CSS. Check @index.css
+                EOF to know better.
               </li>
             </ul>
           </div>

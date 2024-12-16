@@ -66,3 +66,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* This part */
+#test {
+  background-color: rgba(39, 39, 42, 0.95);
+}
