@@ -68,12 +68,9 @@ export default function App() {
               </Button>
 
               {/* Check index.css */}
-              <Button
-                id="test"
-                className="rounded-full text-white shadow-[5px_5px_#111111] transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-[#333333] hover:shadow-[7px_7px_#111111] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[3px_3px_#111111]"
-              >
+              <button id="test">
                 Turns out its not working even in plain CSS
-              </Button>
+              </button>
             </div>
           </div>
 

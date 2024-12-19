@@ -69,5 +69,39 @@
 
 /* This part */
 #test {
-  background-color: rgba(39, 39, 42, 0.95);
+  background-color: rgba(
+    39,
+    39,
+    42,
+    0.95
+  ); /* opacity 0 < anything < 1 causes it */
+  padding: 8px 16px;
+  border-radius: 9999px;
+  color: #ffffff;
+  box-shadow: 5px 5px #111111;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+#test:hover {
+  background-color: #333333;
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px #111111;
+}
+
+#test:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px #111111;
+}
+
+/* #test:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow:
+    0 0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 0 rgba(0, 0, 0, 0);
+} */
